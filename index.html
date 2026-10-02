@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>PixelNode Studio — Sprite- und Pixel-Art-Animation im Browser</title>
+    <meta name="description" content="Nodebasierter Pixel-Art-Editor: Zeichnen, Paletten, Transformationen, Blending, Sequencer und Subgraphen zu Sprite-Sheets oder GIF exportieren — offline im Browser, ohne Anmeldung, in 14 Sprachen." />
+    <meta name="author" content="CSTRSK" />
+    <meta name="copyright" content="© 2008–2026 CSTRSK Software. Alle Rechte vorbehalten." />
+    <link rel="canonical" href="https://cstrsk.de/PixelNode/" />
+
+    <meta property="og:title" content="PixelNode Studio — Sprite- und Pixel-Art-Animation im Browser" />
+    <meta property="og:description" content="Nodebasierter Pixel-Art-Editor: Zeichnen, Paletten, Transformationen, Blending, Sequencer und Subgraphen zu Sprite-Sheets oder GIF exportieren — offline, ohne Anmeldung." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cstrsk.de/PixelNode/" />
+    <meta property="og:image" content="https://cstrsk.de/PixelNode/icon-512.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#4f46e5" />
+    <meta name="application-name" content="PixelNode Studio" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="PixelNode" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "PixelNode Studio",
+      "url": "https://cstrsk.de/PixelNode/",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Web (Browser, offline nutzbar)",
+      "description": "Nodebasierter Editor für Pixel-Art-Animationen: Zeichnen, Paletten, Transformationen, Blending, Sequencer und Subgraphen, Export als Sprite-Sheet oder GIF.",
+      "inLanguage": ["de","en","fr","es","it","pt","ja","ko","zh","hi","ar","ru","tr","id"],
+      "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "author": { "@type": "Organization", "name": "CSTRSK", "url": "https://cstrsk.de/" }
+    }
+    </script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' blob:; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; media-src 'self' blob: data:; object-src 'none'; base-uri 'self'; form-action 'self'" />
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-100 selection:text-indigo-900 overflow-hidden select-none">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("./sw.js").catch(function(){})})}</script>
+    <img src="/track.php?p=PixelNode" width="1" height="1" alt="" style="position:fixed;left:-9999px" />
+  </body>
+</html>
